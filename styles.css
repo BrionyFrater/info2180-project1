@@ -2,7 +2,12 @@
 body {
     margin: 0;
     font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', Arial, "Noto Sans", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+section{
+    padding: 2%;
+    margin: 2%;
 }
 
 /*Header Layout*/
@@ -16,18 +21,42 @@ body {
 header .container{
     display: flex;
     position: static;
+    align-items: center;
+}
+
+nav{
+    position: absolute;
+    right: 5%;
 }
 
 ul{
-    list-style-type: none;
-    position: absolute;
-    right: 5%;    
+    list-style-type: none;  
 }
 
 li{
     display: inline-block;
 }
 
+/*Header Styles*/
+header{
+    background-color: white;
+}
+
+header h1{
+    font-size: 18px;
+}
+
+header a{
+    font-size: 18px;
+}
+
+nav a{
+    color: #6b7280;
+}
+
+nav a:hover{
+    color: #5A67D8;
+}
 /*Hero layout*/
 
 .overview-hero .container{
@@ -42,6 +71,11 @@ li{
     height: auto;
 }
 
+/*Hero Styles*/
+.overview-hero{
+    background-color: #E2E8F0;
+}
+
 /*Learn About*/
 
 .card img{
@@ -53,6 +87,7 @@ li{
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 100%;
+    grid-gap: 10%;
 }
 
 .cards div:nth-child(1){
@@ -70,4 +105,45 @@ li{
     grid-row: 1;
 }
 
+/*Testing Container*/
+.testing .container{
+    display: flex;
+    position: static;
 
+    align-items: center;
+}
+
+.testing-desciption{
+    width: 60%;
+}
+
+.cta{
+    margin-left: 20%;
+}
+
+/*Recent Stories*/
+article{
+    display: flex;
+    margin-bottom: 5%;
+}
+
+article div{
+    padding-left: 5%;
+}
+
+article img{
+    width: 40%;
+    height: 40%;
+}
+
+/*Newsletter*/
+.newsletter .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+}
