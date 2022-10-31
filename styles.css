@@ -10,6 +10,9 @@ section{
     margin: 2%;
 }
 
+a{
+    text-decoration: none;
+}
 /*Header Layout*/
 
 .container {
@@ -35,6 +38,7 @@ ul{
 
 li{
     display: inline-block;
+    padding-right: 20px;
 }
 
 /*Header Styles*/
@@ -77,6 +81,13 @@ nav a:hover{
 }
 
 /*Learn About*/
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
 
 .card img{
     width: 80%;
@@ -105,6 +116,19 @@ nav a:hover{
     grid-row: 1;
 }
 
+/*Learn About Style*/
+.card{
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #E2E8F0;
+
+}
+
+.card h3{
+    color: #48BB78;
+    font-size: 21px;
+}
+
 /*Testing Container*/
 .testing .container{
     display: flex;
@@ -120,6 +144,30 @@ nav a:hover{
 .cta{
     margin-left: 20%;
 }
+
+/*Covid Testing Styles*/
+.testing{
+    background-color: #4A5568;
+    color: white;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #48BB78;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.cta a{
+    color: white;
+}
+
+
 
 /*Recent Stories*/
 article{
